@@ -1,0 +1,270 @@
+->awt has more features 
+
+->Therefore,instead of using the AWT use the "SWING"
+
+->con.java connection with the Database
+
+->MultiThreading
+
+->splash.java
+
+->Frame Size Changes and Location changes based on the X and Y Directions.
+
+->Action Listener based on the "java.awt.event"
+
+->Frame create using the SWING : 
+->import javax.swing.*;
+
+and 
+->JFrame class which has all the "Function of the Swing"
+		all the required classes to create the Frames
+
+->Use the Swing and Thread and the
+	Java does not allow the Multiple Inheritance,
+
+->But while in the cases of the interfaces,Multiple Inheritance 
+	Multiple "implements" these are allowed.
+
+->Must Remember that the C++ and PYTHON allow the Multiple Inheritance!
+
+->Here in this Project,All the Frames coding are done in the Constructors.
+	"super(s)" must be the first statement in the Function or 
+	in the Constructors otherwise ERRORs by putting the "super(s)"
+	instead of the First Line of the Costructors or Functions.
+
+->Swing has the Layouts and to set the Layout use the 
+	borderLayout(bydefault),
+	gridLayout and etc.
+
+->"FlowLayout" which will set where we require in the "SPACE"
+->Here the Frame has the One Thing which is the "IMAGE"
+	"length X breadth"
+
+	add the use anything to the "Frame"
+
+->setVisible to show or hide the Frame
+	true = to see
+	false = to hide,frame paused 
+	which  is pointeed "this" point to the Current Frame!
+
+->Frame 's related all the Coding in the Constructors
+->Frame's all coding in the "sFrame"
+
+->How fast/slow and etc. to open the Frame,
+	->Here the Size Increase and Location decrease
+
+
+->login : 
+awt and swing packages
+java.awt
+javax.swing
+java.sql
+
+->ActionListener : 
+->See the Notes of the AWT and Applet to understand the All Kinds of the 
+	Listeners in the Java and Why and Where We need to use?
+
+->JLabel
+->JTextField
+
+->All coding done in the Constructors.
+	->frame's headings in the "super()"
+
+->Variables' declare the GLOBALs,
+	so used in the various functions.
+
+->Size 10 No. of Columns to Expand
+	per "Character" in the "Text Box" consider 
+	as the Columns and etc.
+
+->No Directly Assign the Image, 
+	For that We need to add that "Image into the Label"
+	and for that We need to create the "ImageIcon"
+->This is the Above Approach to add the IMAGE into the 	
+	Frame of the Application otherwise No Simple Ways
+	to add the Image or No other Ways.
+
+->"getSystemResource" to get the Images and etc.
+	Button with the Images and etc.
+
+->To add on the Frame,
+	create the JPanel and etc.
+	HTML,CSS,JavaScreen and etc.
+
+->"BorderLayout" which handle the Location based Configurations
+	to place these by using the BorderLayout!!!
+
+->In the BorderLayout,
+->IF SUppose Nothing in the "NORTH" then 
+	the Center Data or Center Things 
+	will be gone to the Upper Side!
+	means the Center things are not in the Center!
+
+->TO Show the "Frame" Must Use the Below Line of Codes: 
+
+	frameobject.visible(true);
+
+	and etc. similar kinds of the LOCs.
+
+		
+	otherwise You can simply get the Messages
+	like Build Successful!(No Frames are going to be displayed!)
+
+->If Suppose If We click on the Button then We want that the 
+	Some Actions will be perform means We need EVENTS.
+
+->"ActionListerner" interface use for the EventHandling!
+->"ActionListerner" interface from the "java.awt.event.ActionListener;"
+	So We need to implement the ActionListener!
+
+->And All these "Submit" and "Cancel"
+	Do and Overwrite the "actionPerformed()"
+	must do all the "Required Functionalities."
+
+->To open the PopUp use the "JOptionPane"
+		"JOptionPane.showMessageDialog(null)"
+	null to set the Designing!
+
+->Here in "One Menubar" We have the "5 Menus" and the Menu Items!
+	here do not need the 
+	"java.sql" //database related activities
+
+->Inside the Constructors set the All the Related 	
+	Functionaliies of the Required to generate the 
+	Frame and ,Must Do Always the Frame Visible!
+
+->"Menu vs JMenu"
+->In the Swing all the things are started with the "JMenu"
+	and in the AWT No use of the "J",
+This is the difference between the AWT vs Swing!
+
+
+
+->BackGround Color:
+->ForeGround Color means the "Text Color"
+	and HTML Propertiese are used in the Java Swing!
+
+->MONOSPACE and MNEMONICS(CTRL+N)
+
+->ActionListener is used to perform the Actions.
+
+->dispose() vs System.exit() //to exit from the Program/Project
+
+->"ResultSet" contains all the Over All the Rows.
+->"rs.next()" which jump on the One by One Column.
+
+	"but from these We need only the ID to proceed the FURTHER"
+
+
+->"JTable" is used to create the Table and 
+	the Printing the data and etc. These are done by the "ActionListener!"
+
+->JTable obj = new JTable(h,d)
+//must pass the First 2D Array,and then Second Pass the 1D Array
+//h for the height!!	
+//d for the data!!
+
+->string[20][10];
+	means the String containing the "20 Rows"
+		and "10 Columns"
+
+->and For the Database and Network and etc.
+	Related Activities Must Use the 
+	"try" and "catch",
+	In All the Programming Languages.
+
+->"Statement" is used to execute the Queries!
+	and Must Understand the,
+	"executeUpdate()" for the Insert,Update,Delete and etc. DML Queries
+	 and 
+	"executeQuery()" for Create and Select(DDL and DQL) and etc. Queries.
+
+->"ResultSet" is used to store all the Data from the Executed Queries!
+	and the 
+"rs.next()" which moves from the Column to Column in the Given
+	ResultSet Row one by one to fetch the Data!
+"rs.getString()" and etc. methods to fetch the 
+	Required and Selected Values in the Forms of the 
+	Written DataTypes of the Described Methods.
+
+
+"JScrollPane" is used for the ScrollBar!
+	and inside this Object pass the "JTable Object"
+	(JTable object)
+
+
+->Must Remember and apply here the 
+	"ItemListener" 
+->"Choice(ComboBox)" and because of Selecting the 
+	Options from the "Choice(ComboBox)"
+	then All the Related Things will are going to be displayed!
+->and for this the "ItemLister" must be 
+	used for this Kinds of the "Functionalities."
+
+->So Here "implements" ActionListener,ItemListener
+	These are the Multiple Inheritance 
+	by using the Interfaces of "ActionListener,ItemListener"
+
+->Here the "setLayout(null)" 	
+	means also do not support the "bydefault Layout" as well
+	and So You need to "manually" add the Values to the 
+	"Frames",manually and these kinds of the Addition
+		by done the Locations,means "for the Location"
+	  	"pass the Values" for the "Length and Breadth" 
+		and also must pass the "X and Y Co-Ordinates."
+
+
+->Must write these "X,Y,Height and Breadth" 
+	So that Do not OverWrite are done!
+	
+	and must remember and do the Proper 
+		the "Label" and "TextField" Commbinations!
+
+->button.addActionListener(this)/// "this" for the Frame Object
+->choice.addItemListener(this) /// "this" for the Frame Object
+
+For ActionListener,
+	ActionPerformed() Function OverRide
+and 
+For ItemListener,
+	ItemstateChanged() Function OverRide
+
+
+->To Add the User Required Functionalities.
+
+setText() // to set the data
+ and  
+getText() //to get the data
+
+
+->"Update and Delete"
+	and these will be decide and differentiate 
+	by the "ActionEvent" Object!
+
+->To Fetch the Values from the "TextField" We use the 
+	Function "getText()" Functions
+	and If Suppose We have the "choice" the We 
+		use the "getSelectedItems()" Function
+	
+->These Functions are going to be used!
+
+->"java.util.Date()" //to getch the current date and time
+
+	->And in the "JTable" must Remember that ,,
+		First Time Must Pass the 2-D Array!
+		and then Pass the 1-D Array!
+	
+	->otherwise ERRORS from the "JTable"
+	and 
+	apply the "addActionListener"on the Button
+
+and to print the data and files use the below functions :
+"a.print();"
+
+->and for all the Operations Related to the DataBase
+	We need to  pass the EmployeeID and By Using this EmployeeID We 
+	must use and do the all the Operations We required.
+
+->in the "setText" First Time add the Data and then Append the Data One BY One 
+	So that No OverWrite of the Data! means All the Data are added to the 
+	different Positions not done the OverWrite Positions,as well!
